@@ -4,6 +4,8 @@ import { client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
 import banner from "../sanity_ecommerce/schemas/banner";
 
+const port = process.env.PORT || 3000
+
 // function taking in no params (), and returns ...
 //   Call by saying Home(); static func type.
 const Home = ({ products, bannerData }) => (
